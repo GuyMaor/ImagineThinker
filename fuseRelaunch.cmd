@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_isim_beh.exe" -prj "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_beh.prj" "work.TEST_ALU" "work.glbl" 

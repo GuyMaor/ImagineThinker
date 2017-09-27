@@ -1,0 +1,4 @@
+verilog work "Division_Mod.v"
+verilog work "Data_MUX.v"
+verilog work "ALU.v"
+verilog work "EX_Stage.v"

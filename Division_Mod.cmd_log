@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/Guy/Documents/ReTReO/ImagineThinker/Division_Mod.v -lang verilog -prj ImagineThinker -o Division_Mod.spl -module Division_Mod -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Division_Mod.spl C:/Users/Guy/Documents/ReTReO/ImagineThinker/Division_Mod.sym 
+vhdtdtfi -lib work C:/Users/Guy/Documents/ReTReO/ImagineThinker/Division_Mod.v -lang verilog -prj ImagineThinker -o Division_Mod.spl -module Division_Mod -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Division_Mod.spl C:/Users/Guy/Documents/ReTReO/ImagineThinker/Division_Mod.sym 

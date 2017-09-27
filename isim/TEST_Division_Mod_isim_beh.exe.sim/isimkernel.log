@@ -1,0 +1,29 @@
+Command line:
+   TEST_Division_Mod_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63169
+
+Tue Sep 26 08:29:53 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 999.203 Meg
+
+ Total Signals          : 31
+ Total Nets             : 123
+ Total Signal Drivers   : 22
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 31
+ Total Traceable Variables  : 43
+ Total Scalar Nets and Variables : 603
+Total Line Count : 124
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 841.916 Meg
+
+Tue Sep 26 08:31:48 2017
+

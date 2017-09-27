@@ -1,0 +1,15 @@
+[Inputs]
+clk
+=A1[7:0]=
+=A2[7:0]=
+=B1[7:0]=
+=B2[7:0]=
+=Op[3:0]=
+[Outputs]
+Stall
+=Out1[7:0]=
+=Out2[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Division_Mod
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Guy/Documents/ReTReO/ImagineThinker/division.v -lang verilog -prj ImagineThinker -o division.spl -module division -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e division.spl C:/Users/Guy/Documents/ReTReO/ImagineThinker/division.sym 
