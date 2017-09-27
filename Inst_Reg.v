@@ -34,6 +34,14 @@ module Inst_Reg(Opi,Ai,Bi,Ci,Opo,Ao,Bo,Co,stall,clk);
     input stall;
     input clk;
 	 
+	 initial
+	 begin
+		Opo = 8'd0;
+		Ao = 8'd0;
+		Bo = 8'd0;
+		Co = 8'd0;
+	 end
+	 
 	 always @ (posedge clk)
 	 begin
 	 if(~stall)

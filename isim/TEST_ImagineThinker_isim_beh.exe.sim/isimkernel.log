@@ -1,0 +1,29 @@
+Command line:
+   TEST_ImagineThinker_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51010
+
+Wed Sep 27 03:05:55 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 1003.36 Meg
+
+ Total Signals          : 209
+ Total Nets             : 657
+ Total Signal Drivers   : 79
+ Total Blocks           : 19
+ Total Primitive Blocks : 16
+ Total Processes        : 110
+ Total Traceable Variables  : 151
+ Total Scalar Nets and Variables : 526810
+Total Line Count : 585
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 1003.36 Meg
+
+Wed Sep 27 03:06:22 2017
+

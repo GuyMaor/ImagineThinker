@@ -1,11 +1,16 @@
 ISim log file
-Running: C:\Users\Guy\Documents\Verilog Projects\ImagineThinker\TEST_ALU_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_isim_beh.wdb 
+Running: C:\Users\Guy\Documents\Verilog Projects\ImagineThinker\TEST_ImagineThinker_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU.v" Line 32.  For instance TEST_ALU/uut/, width 4 of formal port Op is not equal to width 8 of actual variable Op. 
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 66.  For instance uut/ExStage/, width 16 of formal port Data_A is not equal to width 1 of actual signal Data_Ao2.
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 66.  For instance uut/ExStage/, width 16 of formal port Data_B is not equal to width 1 of actual signal Data_Bo2.
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 67.  For instance uut/ExStage/, width 16 of formal port ALU_Result is not equal to width 1 of actual signal ALU_Result.
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 67.  For instance uut/ExStage/, width 16 of formal port Data_B_Out is not equal to width 1 of actual signal Data_B_Out.
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 67.  For instance uut/ExStage/, width 8 of formal port C_Reg_Out is not equal to width 1 of actual signal C_Reg_Out.
+WARNING: File "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v" Line 39.  For instance TEST_ImagineThinker/uut/, width 8 of formal port B_Rego2 is not equal to width 1 of actual signal B_Rego2.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

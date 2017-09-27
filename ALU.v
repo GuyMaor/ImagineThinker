@@ -43,6 +43,8 @@ module ALU(A1,A2,B1,B2,Op,Out1,Out2,CompReg,clk);
 	 wire [NUMBER_SIZE*2-1:0] MemSum;
 	 assign MemSum = $signed({A1,A2})+$signed({B1,B2});
 
+	 initial
+		CompReg = 0;
 	 
 always @ (A1,A2,B1,B2,Op)
 begin

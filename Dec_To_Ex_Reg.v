@@ -69,6 +69,25 @@ module Dec_To_Ex_Reg(Ji,Jo,Bi,Bo,Memi,Memo,Storei,Storeo,Divi,Divo,Imi,Imo,MWEi,
     input stall;
     input clk;
 
+	 initial
+	 begin
+		   Jo=0;
+			Bo=0;
+			Memo=0;
+			Storeo=0;
+			Divo=0;
+			Imo=0;
+			Opo=0;
+			MWEo=0;
+			Muxo=0;
+			RWEo=0;
+			DATA_Ao=16'd0;
+			DATA_Bo=16'd0;
+    		A_Rego=8'd0;
+			B_Rego=8'd0;
+			C_Rego=8'd0;
+	 end
+
 	 always @ (posedge clk)
 	 begin
 	 if(~stall)

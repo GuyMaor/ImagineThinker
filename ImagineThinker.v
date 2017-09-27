@@ -18,7 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ImagineThinker(clk);
+//module ImagineThinker(clk,PeripheralBuffer);
+module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump);//DEBUG
+	 output PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump;//DEBUG
     input clk;
 	 wire stall;//ALL STAGE
 	 wire [15:0] BranchAmmount;//EX Stage
@@ -30,12 +32,13 @@ module ImagineThinker(clk);
 	 wire [15:0] Data_In;//WB Stage
 	 wire [7:0] Addr_In;//WB Stage
 	 wire WE;//WB Stage
-	 
+	 output [15:0] PeripheralBuffer;
+	 wire [15:0] PeripheralBuffer;
 	 
 	 wire [15:0] PC;
 	 PC_MOD pc(shouldJump,BranchAmmount,clk,PC,stall);
 	 wire [31:0] nextInst;
-	 RAM ram(clk, dataAddr, PC, dataOut, nextInst, inData,memWE);
+	 RAM ram(clk, dataAddr, PC, dataOut, nextInst, inData,memWE,PeripheralBuffer);
 	 wire [7:0] Opo;
 	 wire [7:0] Ao;
 	 wire [7:0] Bo;
@@ -49,13 +52,13 @@ module ImagineThinker(clk);
 	 wire Jo2,Bo2,Memo2,Storeo2,Divo2,Imo2,MWEo2,Muxo2,RWEo2;
 	 wire [15:0] DATA_Ao2;
 	 wire [15:0] DATA_Bo2;
-	 wire [15:0]Ao2;
-	 wire [15:0]B_Rego2;
-	 wire [15:0]Co2;
+	 wire [7:0]Ao2;
+	 wire [7:0]B_Rego2;
+	 wire [7:0]Co2;
 	 wire [3:0]Opo2;
 	 Dec_To_Ex_Reg DTE_Reg(J,Jo2,B,Bo2,Mem,Memo2,Store,Storeo2,Div,Divo2,Im,Imo2,MWE,MWEo2,
 							Mux,Muxo2,RWE,RWEo2,DATA_A,DATA_Ao2,DATA_B,DATA_Bo2,Ao,Ao2,
-							Bo,Bo_Reg2,Co,Co2,stall,clk,Opo[3:0],Opo2);
+							Bo,B_Rego2,Co,Co2,stall,clk,Opo[3:0],Opo2);
 	 wire MWEo3,Muxo3,RWEo3;
 	 wire [15:0] ALU_Resulto3;
 	 wire [15:0] DATA_Bo3;

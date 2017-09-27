@@ -1,20 +1,48 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_isim_beh.exe -prj C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_beh.prj work.TEST_ALU work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker_isim_beh.exe -prj C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker_beh.prj work.TEST_ImagineThinker work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Division_Mod.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Data_MUX.v" into library work
 Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ALU.v" into library work
-Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Reg_Block.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" into library work
+WARNING:HDLCompiler:568 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 39: Constant value is truncated to fit in <2> bits.
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/PC_MOD.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Mem_To_WB_Reg.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Inst_Reg.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Ex_To_Mem_Reg.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/EX_Stage.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Dec_To_Ex_Reg.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Decoder.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" into library work
+Analyzing Verilog file "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU.v" Line 65: Size mismatch in connection of port <Op>. Formal port size is 4-bit while actual signal size is 8-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v" Line 54: Size mismatch in connection of port <B_Rego2>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 66: Size mismatch in connection of port <Data_A>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 67: Size mismatch in connection of port <ALU_Result>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1007 - "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 84: Element index 16 into inData is out of bounds
 Completed static elaboration
+Compiling module PC_MOD
+Compiling module RAM_default
+Compiling module Inst_Reg
+Compiling module Decoder
+Compiling module Reg_Block_default
+Compiling module Dec_To_Ex_Reg
+Compiling module Data_MUX
+Compiling module Division_Mod_default
 Compiling module ALU
-Compiling module TEST_ALU
+Compiling module EX_Stage
+Compiling module Ex_To_Mem_Reg
+Compiling module Mem_To_WB_Reg
+Compiling module ImagineThinker
+Compiling module TEST_ImagineThinker
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ALU_isim_beh.exe
-Fuse Memory Usage: 28508 KB
-Fuse CPU Usage: 578 ms
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker_isim_beh.exe
+Fuse Memory Usage: 28800 KB
+Fuse CPU Usage: 765 ms

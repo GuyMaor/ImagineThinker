@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/xst"
+elaborate
+-ifn RAM.prj
+-ifmt mixed
