@@ -8,7 +8,7 @@
 <msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 39: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">2</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 125: Element index <arg fmt="%d" index="1">16</arg> into <arg fmt="%s" index="2">inData</arg> is out of bounds
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 140: Element index <arg fmt="%d" index="1">16</arg> into <arg fmt="%s" index="2">inData</arg> is out of bounds
 </msg>
 
 </messages>
