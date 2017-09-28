@@ -19,8 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 //module ImagineThinker(clk,PeripheralBuffer);
-module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData);//DEBUG
-	 output PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData;//DEBUG
+module ImagineThinker(clk,PeripheralBuffer,PC,nextInst);//DEMO
+	 output PC,nextInst;//DEMO
+//module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData);//DEBUG
+//	 output PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData;//DEBUG
     input clk;
 	 wire stall;//ALL STAGE
 	 wire [15:0] BranchAmmount;//EX Stage

@@ -29,7 +29,11 @@ module TEST_ImagineThinker;
 
 	// Outputs
 	wire [15:0] PeripheralBuffer;
-	wire [15:0] PC;
+	wire [15:0] PC; //DEMO
+	wire [31:0] nextInst; //DEMO
+
+	
+	/*wire [15:0] PC;
 	wire [31:0] nextInst;
 	wire J;
 	wire Jo2;
@@ -49,12 +53,14 @@ module TEST_ImagineThinker;
 	wire Memo2;
 	wire [7:0] Opo;
 	wire WE;
-	wire [15:0] inData;
+	wire [15:0] inData;*/
 	// Instantiate the Unit Under Test (UUT)
 	ImagineThinker uut (
 		.clk(clk), 
-		.PeripheralBuffer(PeripheralBuffer), 
-		.PC(PC), 
+		.PeripheralBuffer(PeripheralBuffer),
+		.PC(PC), //DEMO
+		.nextInst(nextInst)//DEMO
+		/*.PC(PC), 
 		.nextInst(nextInst), 
 		.J(J), 
 		.Jo2(Jo2), 
@@ -74,7 +80,7 @@ module TEST_ImagineThinker;
 		.Opo(Opo),
 		.Memo2(Memo2),
 		.WE,
-		.inData(inData)
+		.inData(inData)*/
 	);
 
 	initial begin

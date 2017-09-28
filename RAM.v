@@ -56,8 +56,23 @@ module RAM(clk, dataAddr, instAddr, dataOut, instOut, inData,write_en,Peripheral
 	 parameter [OP_SIZE-1:0] BRANCH =  8'b10010000;
 	 parameter [OP_SIZE-1:0] JUMP =  8'b10110000;
 	 parameter [OP_SIZE-1:0] IMED_LD = 8'b10100000; 
-
+		
+	 /* //ADD CODE FOR PRESENTATION
 	 initial
+	 begin
+		{mem[3],mem[2],mem[1],mem[0]} =     32'ha0040500;
+		{mem[7],mem[6],mem[5],mem[4]} =     32'ha0060701; 
+		{mem[11],mem[10],mem[9],mem[8]} =   32'ha0fffe02;
+		{mem[15],mem[14],mem[13],mem[12]} = 32'h00000000;
+		{mem[19],mem[18],mem[17],mem[16]} = 32'h80000103;
+		{mem[23],mem[22],mem[21],mem[20]} = 32'h00000000;
+		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
+		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;
+		{mem[35],mem[34],mem[33],mem[32]} = 32'h8f020300;
+		{mem[39],mem[38],mem[37],mem[36]} = 32'hb0000000;
+		{mem[8'h80],mem[8'h7f]} = 16'haaaa;
+	 end*/
+	 /*initial //DIVIDE CODE FOR PRESENTATION
 	 begin
 		{mem[3],mem[2],mem[1],mem[0]} =     32'ha0080000;
 		{mem[7],mem[6],mem[5],mem[4]} =     32'ha000fc01; 
@@ -70,7 +85,7 @@ module RAM(clk, dataAddr, instAddr, dataOut, instOut, inData,write_en,Peripheral
 		{mem[35],mem[34],mem[33],mem[32]} = 32'h8f020300;
 		{mem[39],mem[38],mem[37],mem[36]} = 32'hb0000000;
 		{mem[8'h80],mem[8'h7f]} = 16'haaaa;
-	 end	
+	 end*/	
 	/*
 	 initial
 	 begin
@@ -102,18 +117,18 @@ module RAM(clk, dataAddr, instAddr, dataOut, instOut, inData,write_en,Peripheral
 		{mem[39],mem[38],mem[37],mem[36]} = 32'h00000000;
 		{mem[8'h80],mem[8'h7f]} = 16'haaaa;
 	 end*/
-	/*
+	///*
 	 initial
 	 begin
 		{mem[3],mem[2],mem[1],mem[0]} = 32'h00000000; 
-		{mem[7],mem[6],mem[5],mem[4]} = 32'h00000000;
+		{mem[7],mem[6],mem[5],mem[4]} = 32'hb0fffc00;
 		{mem[11],mem[10],mem[9],mem[8]} = 32'h00000000;
 		{mem[15],mem[14],mem[13],mem[12]} = 32'h00000000;
-		{mem[19],mem[18],mem[17],mem[16]} = {32'hb0fff000};  
+		{mem[19],mem[18],mem[17],mem[16]} = 32'h00000000;  
 		{mem[23],mem[22],mem[21],mem[20]} = 32'h00000000; 
 		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
 		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;		
-	 end*/
+	 end//*/
 	 /*
 	 initial
 	 begin
