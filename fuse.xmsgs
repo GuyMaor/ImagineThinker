@@ -8,16 +8,7 @@
 <msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 39: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">2</arg>&gt; bits.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v" Line 54: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">B_Rego2</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 66: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Data_A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v" Line 67: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ALU_Result</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 84: Element index <arg fmt="%d" index="1">16</arg> into <arg fmt="%s" index="2">inData</arg> is out of bounds
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/RAM.v" Line 125: Element index <arg fmt="%d" index="1">16</arg> into <arg fmt="%s" index="2">inData</arg> is out of bounds
 </msg>
 
 </messages>

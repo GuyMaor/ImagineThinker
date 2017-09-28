@@ -24,6 +24,8 @@ module ALU(A1,A2,B1,B2,Op,Out1,Out2,CompReg,clk);
 	 parameter [OP_SIZE-1:0] GORE_COMP = 4'b1110;
 	 //For Memory Access
 	 parameter [OP_SIZE-1:0] MEM_ACCESS = 4'b1111;
+	 //Move
+	 parameter [OP_SIZE-1:0] MOVE = 4'b0111;
 	 //TRUE/FALSE constants
 	 parameter [NUMBER_SIZE-1:0] TRUE = 8'b11111111;
 	 parameter [NUMBER_SIZE-1:0] FALSE = 8'b00000000;
@@ -94,7 +96,7 @@ begin
 		end 
 		EQUAL_COMP:
 		begin
-			if(A1==B1)
+			if((A1==B1)&&(A2==B2))
 			begin
 				Out1 = TRUE;
 				Out2 = TRUE;
@@ -162,6 +164,11 @@ begin
 			Out1 = MemSum[NUMBER_SIZE*2-1:NUMBER_SIZE];
 			Out2 = MemSum[NUMBER_SIZE-1:0];
 		end
+		MOVE:
+		begin
+			Out1 = A1;
+			Out2 = A2;
+		end
 		default: 
 		begin
 			Out1 = FALSE;
@@ -174,7 +181,7 @@ always @ (posedge clk)
 begin
 	case(Op)
 		LESS_COMP : CompReg = A1<B1;
-		EQUAL_COMP : CompReg = A1==B1;
+		EQUAL_COMP : CompReg = (A1==B1)&&(A2==B2);
 		LORE_COMP : CompReg = A1<=B1;
 		GREAT_COMP : CompReg = A1>B1;
 		NEQUAL_COMP : CompReg = A1!=B1;

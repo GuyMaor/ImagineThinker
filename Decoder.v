@@ -29,6 +29,7 @@ module Decoder(In_Code,J,B,Mem,Store,Div,Im,MWE,Mux,RWE);
 	 parameter [OP_SIZE-1:0] REAL_OP = 8'b10000100;
 	 parameter [OP_SIZE-1:0] IMAGINE_OP = 8'b10000101;
 	 parameter [OP_SIZE-1:0] CONJ_OP = 8'b10000110;
+	 parameter [OP_SIZE-1:0] MOVE = 8'b10000111;
 	 //parameter [OP_SIZE-1:0] IMED_LD = 8'b10000111;
 	 parameter [OP_SIZE-1:0] LESS_COMP = 8'b10001001;
 	 parameter [OP_SIZE-1:0] EQUAL_COMP = 8'b10001010;
@@ -259,6 +260,18 @@ module Decoder(In_Code,J,B,Mem,Store,Div,Im,MWE,Mux,RWE);
 		MWE = 0;
 		Mux = 0;
 		RWE = 0;
+	 end
+	 MOVE:
+	 begin
+		J = 0;
+		B = 0;
+		Mem = 0;
+     	Store = 0;
+		Div = 0;
+		Im = 0;
+		MWE = 0;
+		Mux = 0;
+		RWE = 1;
 	 end
 	 default:
 	 begin

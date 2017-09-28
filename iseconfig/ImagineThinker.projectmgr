@@ -11,13 +11,13 @@
          <ClosedNode>/ImagineThinker C:|Users|Guy|Documents|ReTReO|ImagineThinker|ImagineThinker.v/ExStage - EX_Stage</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>DTE_Reg - Dec_To_Ex_Reg (C:/Users/Guy/Documents/ReTReO/ImagineThinker/Dec_To_Ex_Reg.v)</SelectedItem>
+         <SelectedItem>ImagineThinker (C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>DTE_Reg - Dec_To_Ex_Reg (C:/Users/Guy/Documents/ReTReO/ImagineThinker/Dec_To_Ex_Reg.v)</CurrentItem>
+      <CurrentItem>ImagineThinker (C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/ImagineThinker.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -65,36 +65,38 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000fc0000010301000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <SourceProcessView>000000ff00000000000000020000015f0000006f01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ImagineThinker C:|Users|Guy|Documents|Verilog Projects|ImagineThinker|ImagineThinker.v</ClosedNode>
          <ClosedNode>/TEST_ALU C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_ALU.v</ClosedNode>
          <ClosedNode>/TEST_Data_MUX C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_Data_MUX.v</ClosedNode>
          <ClosedNode>/TEST_Division_Mod C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_Division_Mod.v</ClosedNode>
          <ClosedNode>/TEST_EX_Stage C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_EX_Stage.v</ClosedNode>
          <ClosedNode>/TEST_EX_Stage C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_EX_Stage.v/uut - EX_Stage</ClosedNode>
+         <ClosedNode>/TEST_EX_Stage C:|Users|Guy|Documents|Verilog Projects|ImagineThinker|TEST_EX_Stage.v/uut - EX_Stage</ClosedNode>
          <ClosedNode>/TEST_PC_MOD C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_PC_MOD.v</ClosedNode>
          <ClosedNode>/TEST_RAM C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_RAM.v</ClosedNode>
          <ClosedNode>/TEST_Reg_Block C:|Users|Guy|Documents|ReTReO|ImagineThinker|TEST_Reg_Block.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TEST_EX_Stage (C:/Users/Guy/Documents/ReTReO/ImagineThinker/TEST_EX_Stage.v)</SelectedItem>
+         <SelectedItem>TEST_ImagineThinker (C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000126000000020000000000000000000000000200000064ffffffff000000810000000300000002000001260000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TEST_EX_Stage (C:/Users/Guy/Documents/ReTReO/ImagineThinker/TEST_EX_Stage.v)</CurrentItem>
+      <CurrentItem>TEST_ImagineThinker (C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/TEST_ImagineThinker.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -102,25 +104,25 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
 </Project>

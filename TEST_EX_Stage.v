@@ -44,6 +44,7 @@ module TEST_EX_Stage;
 	//For Memory Access
 	 parameter [OP_SIZE-1:0] MEM_ACCESS = 4'b1111;
 	 
+	 
 	// Inputs
 	reg J;
 	reg B;
@@ -102,10 +103,10 @@ module TEST_EX_Stage;
 		.RWE_Out(RWE_Out), 
 		.ALU_Result(ALU_Result), 
 		.Data_B_Out(Data_B_Out),
-		.data_or_mem(data_or_mem),
-		.B_or_C(B_or_C),
-		.alu_out(alu_out),
-		.div_res(div_res),
+		//.data_or_mem(data_or_mem),
+		//.B_or_C(B_or_C),
+		//.alu_out(alu_out),
+		//.div_res(div_res),
 		.C_Reg_Out(C_Reg_Out)
 	);
 
@@ -225,7 +226,7 @@ J = 1;
 clk = 1;
 #100;
 clk = 0;
-//STORE
+//STORE Result = a
 Data_A = 16'h0005;
 C_Reg = 8'h05;
 B_Reg = 8'h50;

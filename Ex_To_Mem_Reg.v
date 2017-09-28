@@ -40,6 +40,16 @@ module Ex_To_Mem_Reg(MWEi,MWEo,Muxi,Muxo,RWEi,RWEo,Resi,Reso,DATA_Bi,DATA_Bo,C_R
     input clk;
     input stall;       
 
+	 initial
+	 begin
+			MWEo = 0;
+			Muxo = 0;
+			RWEo = 0;
+			Reso = 16'd0;
+			DATA_Bo = 16'd0;
+			C_Rego = 8'd0;	 
+	 end
+
 	 always @ (posedge clk)
 	 begin
 	 if(~stall)

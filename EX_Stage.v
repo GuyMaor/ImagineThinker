@@ -22,7 +22,7 @@ module EX_Stage(J,B,Mem,Store,Div,Im,OpCode,MWE,Mux,RWE,Data_A,Data_B,A_Reg,B_Re
 						shouldJump,stall,MWE_Out,Mux_Out,RWE_Out,ALU_Result,Data_B_Out,C_Reg_Out,BranchAmmount);
 //module EX_Stage(J,B,Mem,Store,Div,Im,OpCode,MWE,Mux,RWE,Data_A,Data_B,A_Reg,B_Reg,C_Reg,clk,
 //						shouldJump,stall,MWE_Out,Mux_Out,RWE_Out,ALU_Result,Data_B_Out,C_Reg_Out,data_or_mem,B_or_C,alu_out,div_res,BranchAmmount);
-	 //output [15:0] data_or_mem,B_or_C,alu_out,div_res;//DEBUG
+//	 output [15:0] data_or_mem,B_or_C,alu_out,div_res;//DEBUG
 	 output [15:0] BranchAmmount;
 	 wire [15:0] BranchAmmount;
     input J;

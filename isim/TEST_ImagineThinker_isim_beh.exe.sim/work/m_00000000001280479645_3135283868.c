@@ -22,10 +22,47 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/Guy/Documents/Verilog Projects/ImagineThinker/Ex_To_Mem_Reg.v";
+static int ng1[] = {0, 0};
+static unsigned int ng2[] = {0U, 0U};
 
 
 
-static void Always_43_0(char *t0)
+static void Initial_43_0(char *t0)
+{
+    char *t1;
+    char *t2;
+
+LAB0:    xsi_set_current_line(44, ng0);
+
+LAB2:    xsi_set_current_line(45, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 2568);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
+    xsi_set_current_line(46, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 2728);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
+    xsi_set_current_line(47, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 2888);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
+    xsi_set_current_line(48, ng0);
+    t1 = ((char*)((ng2)));
+    t2 = (t0 + 3048);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 16);
+    xsi_set_current_line(49, ng0);
+    t1 = ((char*)((ng2)));
+    t2 = (t0 + 3208);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 16);
+    xsi_set_current_line(50, ng0);
+    t1 = ((char*)((ng2)));
+    t2 = (t0 + 3368);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 8);
+
+LAB1:    return;
+}
+
+static void Always_53_1(char *t0)
 {
     char t4[8];
     char *t1;
@@ -58,24 +95,24 @@ static void Always_43_0(char *t0)
     char *t29;
     char *t30;
 
-LAB0:    t1 = (t0 + 4288U);
+LAB0:    t1 = (t0 + 4536U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(43, ng0);
-    t2 = (t0 + 4608);
+LAB2:    xsi_set_current_line(53, ng0);
+    t2 = (t0 + 4856);
     *((int *)t2) = 1;
-    t3 = (t0 + 4320);
+    t3 = (t0 + 4568);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(44, ng0);
+LAB4:    xsi_set_current_line(54, ng0);
 
-LAB5:    xsi_set_current_line(45, ng0);
+LAB5:    xsi_set_current_line(55, ng0);
     t5 = (t0 + 2168U);
     t6 = *((char **)t5);
     memset(t4, 0, 8);
@@ -131,34 +168,34 @@ LAB11:    t17 = *((unsigned int *)t4);
     *((unsigned int *)t13) = (t19 | t20);
     goto LAB10;
 
-LAB12:    xsi_set_current_line(46, ng0);
+LAB12:    xsi_set_current_line(56, ng0);
 
-LAB15:    xsi_set_current_line(47, ng0);
+LAB15:    xsi_set_current_line(57, ng0);
     t29 = (t0 + 1048U);
     t30 = *((char **)t29);
     t29 = (t0 + 2568);
     xsi_vlogvar_assign_value(t29, t30, 0, 0, 1);
-    xsi_set_current_line(48, ng0);
+    xsi_set_current_line(58, ng0);
     t2 = (t0 + 1208U);
     t3 = *((char **)t2);
     t2 = (t0 + 2728);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 1);
-    xsi_set_current_line(49, ng0);
+    xsi_set_current_line(59, ng0);
     t2 = (t0 + 1368U);
     t3 = *((char **)t2);
     t2 = (t0 + 2888);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 1);
-    xsi_set_current_line(50, ng0);
+    xsi_set_current_line(60, ng0);
     t2 = (t0 + 1528U);
     t3 = *((char **)t2);
     t2 = (t0 + 3048);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 16);
-    xsi_set_current_line(51, ng0);
+    xsi_set_current_line(61, ng0);
     t2 = (t0 + 1688U);
     t3 = *((char **)t2);
     t2 = (t0 + 3208);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 16);
-    xsi_set_current_line(52, ng0);
+    xsi_set_current_line(62, ng0);
     t2 = (t0 + 1848U);
     t3 = *((char **)t2);
     t2 = (t0 + 3368);
@@ -170,7 +207,7 @@ LAB15:    xsi_set_current_line(47, ng0);
 
 extern void work_m_00000000001280479645_3135283868_init()
 {
-	static char *pe[] = {(void *)Always_43_0};
+	static char *pe[] = {(void *)Initial_43_0,(void *)Always_53_1};
 	xsi_register_didat("work_m_00000000001280479645_3135283868", "isim/TEST_ImagineThinker_isim_beh.exe.sim/work/m_00000000001280479645_3135283868.didat");
 	xsi_register_executes(pe);
 }

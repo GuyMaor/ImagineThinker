@@ -19,8 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 //module ImagineThinker(clk,PeripheralBuffer);
-module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump);//DEBUG
-	 output PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump;//DEBUG
+module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData);//DEBUG
+	 output PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,BranchAmmount,shouldJump,Data_In,DATA_Bo2,DATA_Ao2,ALU_Resulto3,Storeo2,Divo2,Imo2,Memo2,Opo,WE,inData;//DEBUG
     input clk;
 	 wire stall;//ALL STAGE
 	 wire [15:0] BranchAmmount;//EX Stage
@@ -63,8 +63,9 @@ module ImagineThinker(clk,PeripheralBuffer,PC,nextInst,J,Jo2,Co,Co2,Bo,B_Rego2,B
 	 wire [15:0] ALU_Resulto3;
 	 wire [15:0] DATA_Bo3;
 	 wire [7:0] C_Rego3;
-	 EX_Stage ExStage(Jo2,Bo2,Memo2,Storeo2,Divo2,Imo2,Opo2,MWEo2,Muxo2,RWEo2,Data_Ao2,Data_Bo2,Ao2,B_Rego2,Co2,clk,
-						shouldJump,stall,MWE_Out,Mux_Out,RWE_Out,ALU_Result,Data_B_Out,C_Reg_Out,BranchAmmount);
+	 EX_Stage ExStage(Jo2,Bo2,Memo2,Storeo2,Divo2,Imo2,Opo2,MWEo2,Muxo2,RWEo2,DATA_Ao2,DATA_Bo2,Ao2,B_Rego2,Co2,clk,
+						//shouldJump,stall,MWE_Out,Mux_Out,RWE_Out,ALU_Result,Data_B_Out,C_Reg_Out,BranchAmmount);
+						shouldJump,stall,MWEo3,Muxo3,RWEo3,ALU_Resulto3,DATA_Bo3,C_Rego3,BranchAmmount);
 	 wire Muxo4,RWEo4;
 	 wire [7:0] C_Rego4;
 	 Ex_To_Mem_Reg ETM_Reg(MWEo3,memWE,Muxo3,Muxo4,RWEo3,RWEo4,ALU_Resulto3,dataAddr,DATA_Bo3,inData,C_Rego3,C_Rego4,clk,stall);

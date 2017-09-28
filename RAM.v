@@ -55,10 +55,39 @@ module RAM(clk, dataAddr, instAddr, dataOut, instOut, inData,write_en,Peripheral
 	 parameter [OP_SIZE-1:0] LOAD = 8'b10011111;
 	 parameter [OP_SIZE-1:0] BRANCH =  8'b10010000;
 	 parameter [OP_SIZE-1:0] JUMP =  8'b10110000;
-	 parameter [OP_SIZE-1:0] IMED_LD = 8'b10100000;
-	//00010000
-	//11101111
-	//11110000
+	 parameter [OP_SIZE-1:0] IMED_LD = 8'b10100000; 
+
+
+	 initial
+	 begin
+		{mem[3],mem[2],mem[1],mem[0]} =     32'ha0050500;
+		{mem[7],mem[6],mem[5],mem[4]} =     32'ha0050401;
+		{mem[11],mem[10],mem[9],mem[8]} =   32'h00000000;
+		{mem[15],mem[14],mem[13],mem[12]} = 32'h00000000;
+		{mem[19],mem[18],mem[17],mem[16]} = 32'h8c000100;//32'h89000100;
+		{mem[23],mem[22],mem[21],mem[20]} = 32'h90000300;
+		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
+		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;
+		{mem[35],mem[34],mem[33],mem[32]} = 32'h8f020101;
+		{mem[39],mem[38],mem[37],mem[36]} = 32'h8b000000;
+		{mem[8'h80],mem[8'h7f]} = 16'haaaa;
+	 end	 
+	 /*
+	 initial
+	 begin
+		{mem[3],mem[2],mem[1],mem[0]} =     32'ha0007f00;
+		{mem[7],mem[6],mem[5],mem[4]} =     32'ha0fffd02;
+		{mem[11],mem[10],mem[9],mem[8]} =   32'h00000000;
+		{mem[15],mem[14],mem[13],mem[12]} = 32'h00000000;
+		{mem[19],mem[18],mem[17],mem[16]} = 32'h9f000001;
+		{mem[23],mem[22],mem[21],mem[20]} = 32'h00000000;
+		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
+		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;
+		{mem[35],mem[34],mem[33],mem[32]} = 32'h8f020101;
+		{mem[39],mem[38],mem[37],mem[36]} = 32'h00000000;
+		{mem[8'h80],mem[8'h7f]} = 16'haaaa;
+	 end*/
+	/*
 	 initial
 	 begin
 		{mem[3],mem[2],mem[1],mem[0]} = 32'h00000000; 
@@ -69,10 +98,22 @@ module RAM(clk, dataAddr, instAddr, dataOut, instOut, inData,write_en,Peripheral
 		{mem[23],mem[22],mem[21],mem[20]} = 32'h00000000; 
 		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
 		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;		
-	 end
-
-
-	
+	 end*/
+	 /*
+	 initial
+	 begin
+		{mem[3],mem[2],mem[1],mem[0]} =     32'ha0010100;
+		{mem[7],mem[6],mem[5],mem[4]} =     32'ha0010201;
+		{mem[11],mem[10],mem[9],mem[8]} =   32'h00000000;
+		{mem[15],mem[14],mem[13],mem[12]} = 32'h00000000;
+		{mem[19],mem[18],mem[17],mem[16]} = 32'h00000000;
+		{mem[23],mem[22],mem[21],mem[20]} = 32'h00000000;//32'h80000102;
+		{mem[27],mem[26],mem[25],mem[24]} = 32'h00000000;
+		{mem[31],mem[30],mem[29],mem[28]} = 32'h00000000;
+		{mem[35],mem[34],mem[33],mem[32]} = 32'h00000000;
+		{mem[39],mem[38],mem[37],mem[36]} = 32'h00000000;
+	 end*/
+	 
 
 
 	

@@ -28,9 +28,11 @@ module Reg_Block(Addr_Out_A,Addr_Out_B,Addr_In,Data_In,WE,Data_Out_A,Data_Out_B,
     input [15:0] Data_In;
     input WE;
     output [15:0] Data_Out_A;
-	 reg [15:0] Data_Out_A;
+	 //reg [15:0] Data_Out_A;
+	 wire [15:0] Data_Out_A;
     output [15:0] Data_Out_B;
-	 reg [15:0] Data_Out_B;
+	 //reg [15:0] Data_Out_B;
+	 wire [15:0] Data_Out_B;
 	 input clk;
 
 	 reg [DATA_WIDTH-1:0] regBlock [RAM_DEPTH-1:0];
@@ -42,11 +44,15 @@ module Reg_Block(Addr_Out_A,Addr_Out_B,Addr_In,Data_In,WE,Data_Out_A,Data_Out_B,
 			regBlock[Addr_In] <= Data_In;
 		end
 	end
-
+    /*
 	 always @ (Addr_Out_A,Addr_Out_B)
 	 begin
 		Data_Out_A = regBlock[Addr_Out_A];
 		Data_Out_B = regBlock[Addr_Out_B];
 	 end
-	 
+	 */
+
+		assign Data_Out_A = regBlock[Addr_Out_A];
+		assign Data_Out_B = regBlock[Addr_Out_B];
+	
 endmodule
