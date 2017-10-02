@@ -135,7 +135,7 @@ begin
 		end 
 		NEQUAL_COMP:
 		begin
-			if(A1!=B1)
+			if((A1!=B1)||(A2!=B2))
 			begin
 				Out1 = TRUE;
 				Out2 = TRUE;
@@ -184,7 +184,7 @@ begin
 		EQUAL_COMP : CompReg = (A1==B1)&&(A2==B2);
 		LORE_COMP : CompReg = A1<=B1;
 		GREAT_COMP : CompReg = A1>B1;
-		NEQUAL_COMP : CompReg = A1!=B1;
+		NEQUAL_COMP : CompReg = (A1!=B1)||(A2!=B2);
 		GORE_COMP : CompReg = A1>=B1;
 		default : CompReg = CompReg;
 	endcase
